@@ -15,17 +15,6 @@ function sum(n) {
     return f;
 }
 
-console.log(+sum(1)(2)(3))
+console.log(+sum(1)(2)(3));
 console.log(+sum(1)()()(1));
-console.log(+sum()(5)())
-
-
-/*
-function sum(x) {
-    sum.result = (sum.result) ? sum.result += x : x;
-    sum.valueOf = function() {
-        return sum.result;
-    }
-    return sum;
-}
-*/
+console.log(+sum()(5)());
