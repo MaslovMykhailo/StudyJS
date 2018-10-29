@@ -1,7 +1,7 @@
 const isSorted = arr => {
   if (!arr.length) return true;
   
-  return arr.join() === arr.sort((a, b) => a - b).join();
+  return arr.join('') === arr.sort((a, b) => a - b).join('');
 };
 
 console.log(isSorted([]));
