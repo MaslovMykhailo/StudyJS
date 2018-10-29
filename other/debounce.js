@@ -1,5 +1,4 @@
 'use string';
-// вызов не чаще чем в N мс
 
 function debounce(f, ms) {
 

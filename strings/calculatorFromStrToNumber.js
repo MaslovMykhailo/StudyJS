@@ -24,7 +24,7 @@ function Calculator() {
     method[name] = func ;
   } ;
 
-} ;
+}
 
 let calc = new Calculator;
 

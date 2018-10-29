@@ -1,5 +1,4 @@
 'use strict';
-// Тормозилка
 
 function throttle(f, ms) {
   let isThrottled = false, savedThis, savedArgs;

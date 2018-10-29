@@ -1,4 +1,4 @@
-'use sttrict';
+'use strict';
 
 function sum(n) {
     n = n ? n : 0;
