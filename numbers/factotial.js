@@ -1,11 +1,12 @@
+const memoizeFactorial = { '0': 1, '1': 1, '2': 2 };
+
 const factorial = n => {
-  const memoize = { '0': 1, '1': 1, '2': 2 };
   
   const factorialRecursive = n => {
-    let res = memoize[n];
+    let res = memoizeFactorial[n];
     
     if (!res) {
-      res = memoize[n] = n * factorialRecursive(n-1);
+      res = memoizeFactorial[n] = n * factorialRecursive(n-1);
     }
     
     return res;
