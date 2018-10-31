@@ -1,11 +1,11 @@
 const reduce = (arr, accumulatorFn, initVal = 0) => {
-  let accmulator = initVal;
+  let accumulator = initVal;
   
   for (let i = 0 ; i < arr.length ; i++) {
-    accmulator = accumulatorFn(accmulator, arr[i]);
+    accumulator = accumulatorFn(accumulator, arr[i]);
   }
   
-  return accmulator;
+  return accumulator;
 };
 
 console.log(reduce([1, 2, 3, 4], (a, b) => a + b, 0));
