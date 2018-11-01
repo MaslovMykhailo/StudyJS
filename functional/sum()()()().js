@@ -18,3 +18,23 @@ function sum(n) {
 console.log(+sum(1)(2)(3));
 console.log(+sum(1)()()(1));
 console.log(+sum()(5)());
+
+
+function anotherSum(x) {
+    let sum = x;
+    
+    const f = function (y) {
+        if (y) {
+          sum += y;
+          return f;
+        }
+        return sum;
+    };
+    
+    return sum ? f : 0;
+}
+
+console.log(anotherSum(1)());
+console.log(anotherSum(1)(2)());
+console.log(anotherSum(1)(2)(3)());
+console.log(anotherSum(1)(2)(3)(4)());
